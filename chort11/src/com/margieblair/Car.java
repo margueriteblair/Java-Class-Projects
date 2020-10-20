@@ -26,4 +26,14 @@ public class Car {
         isOn = false; //can be default
     }
 
+    public void drive() {
+        if (!isOn) {
+            System.out.println("Lol, your car needs to be on first");
+            return;
+            //you can return nothing
+        }
+        System.out.println("Moving!");
+
+    }
+
 }
