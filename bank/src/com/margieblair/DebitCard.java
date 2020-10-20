@@ -1,7 +1,7 @@
 package com.margieblair;
 
 public class DebitCard {
-    private int pin;
+    private String pin; //ints cant handle leadings 0's
     private CheckingAccount primary;
     private int cvv;
     private String owner;
