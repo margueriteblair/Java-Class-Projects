@@ -2,7 +2,7 @@ package com.margieblair;
 
 public class Car {
     private String color;
-    private String model;
+    public String model;
     private String vin;
     private int tireCount;
     private int year;
@@ -37,7 +37,26 @@ public class Car {
     }
 
     public void setisOn() {
+        //you can addsome logic to your setters
+        //otherwise, you might as well have a public var, you know
+        if (isOn && on) {
+            System.out.println("Screech");
+        }
+
+        if (!isOn && !on) {
+            System.out.println("Radio starting...");
+        }
         isOn = !isOn;
+    }
+
+    public void displayDetails() {
+        System.out.println("");
+    }
+
+    @Override //called a flag
+    //overriding the behavior of that toString() method
+    public String toString() {
+        return "You are driving a" + color + "car " + year + " " + model + ".";
     }
 
 }
