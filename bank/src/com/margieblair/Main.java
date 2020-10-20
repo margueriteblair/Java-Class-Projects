@@ -6,5 +6,7 @@ public class Main {
 	// write your code here
         BankAccount myBankAccount = new BankAccount();
         SavingsAccount mySavingsAccount = new SavingsAccount();
+        System.out.println("Hellooo");
+
     }
 }
