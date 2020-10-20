@@ -36,4 +36,8 @@ public class Car {
 
     }
 
+    public void setisOn() {
+        isOn = !isOn;
+    }
+
 }
