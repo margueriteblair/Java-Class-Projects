@@ -19,4 +19,13 @@ public class DebitCard {
         this.atmAccounts = atmAccounts;
     }
 
+    public boolean charge(int amt, String pin) {
+        if (this.pin == pin && primary.balance >= amt) {
+            //we're only able to access our balance through primary
+            primary.withdraw(amt);
+            return true;
+        }
+        return false;
+    }
+
 }

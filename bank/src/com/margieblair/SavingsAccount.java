@@ -8,6 +8,6 @@ public class SavingsAccount extends BankAccount {
     }
 
     public void applyInterest() {
-        balance += balance * ((float) interest / 100.0);
+        balance += ((int) balance * ((float) interest / 100.0));
     }
 }
